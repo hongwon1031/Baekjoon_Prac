@@ -1,0 +1,5 @@
+N = int(input())
+li = list(map(int,input().split(' ')))
+v = int(input())
+count = li.count(v)
+print(count)
