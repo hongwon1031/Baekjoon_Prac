@@ -1,0 +1,5 @@
+print(input())
+print(input())
+print(input())
+print(input())
+a,b,c,d = map(int,(input() for _ in range(4)))
