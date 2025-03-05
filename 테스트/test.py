@@ -1,18 +1,14 @@
-import sys
-n = sys.stdin.readline()
+'''a = input()
+count = a.count(' ')
+if (a[0] == ' ')or (a[-1] == ' '):
+    count -= 1
 
+print(count+1)
 
-for i in range(int(n)):
-    a = sys.stdin.readline().rstrip()
-    a,b = a.split(' ')
-    print(int(a)+int(b))
-
-
-
-
-
-'''1 1
-12 34
-5 500
-40 60
-1000 1000'''
+'''
+a = input()
+count = 0
+for i in range(1,len(a)):
+    if a[i] == ' ':
+        count += 1
+print(count)
