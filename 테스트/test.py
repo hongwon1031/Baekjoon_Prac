@@ -1,18 +1,18 @@
 import sys
+
+def gcd(a,b):   #최대공약수
+    while b>0:
+        a,b = b,a%b
+    return a
+
 def input():
     return sys.stdin.readline()
-M,N = map(int,input().split())
 
-li = [i for i in range(2,M+1)]
-p = min(li)
-print(li,p)
-for _ in range(len(li)):
-    for i in range(len(li)):
-        print('i =',i)
-        print('li =',li)
-        if li[i]%p == 0:
-            li.remove(li[i])
-            print(li[i])
-            print(i,'전')
-            i -= 1
-            print(i,'후')
+a,b = map(int,input().split())
+def old_gcd(a,b):
+    count = 0
+    while a!=b:
+        a, b = max(a,b) - min(a,b), min(a,b)
+        count += 1
+    return count
+print(old_gcd(a,b))
