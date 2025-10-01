@@ -1,3 +1,7 @@
 import math
 def solution(n):
-    return int((math.sqrt(n)+1)**2) if math.sqrt(n)==int(math.sqrt(n)) else -1
+    result = math.sqrt(n)
+    if str(result)[-1] == '0':
+        return int((result + 1)**2)
+    else:
+        return -1
